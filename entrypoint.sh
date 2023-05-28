@@ -4,8 +4,16 @@ set -e
 set -o errexit
 set -o nounset
 
-IDE_SERVER_VERSION=$1 || "latest"
-IDE_SERVER_PORT=$2 || "4000"
+IDE_SERVER_VERSION="latest"
+IDE_SERVER_PORT="4000"
+
+if [ -n "$1" ]; then
+  IDE_SERVER_VERSION=$1
+fi
+
+if [ -n "$2" ]; then
+  IDE_SERVER_PORT=$2
+fi
 
 echo "Version: [$IDE_SERVER_VERSION]"
 echo "Port: [$IDE_SERVER_PORT]"
