@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-set -e
-set -o errexit
-set -o nounset
-
 IDE_SERVER_VERSION="latest"
 IDE_SERVER_PORT="4000"
 
