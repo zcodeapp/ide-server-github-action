@@ -73,4 +73,5 @@ if [ -z "$opt_imageversion" ] ; then
   exit 1
 fi
 docker run --detach --publish=4000:4000 --name=$opt_container $opt_image:$opt_imageversion
+sleep 5 # wait container start
 echo "Success run container [$opt_container - $opt_image:$opt_imageversion]"
