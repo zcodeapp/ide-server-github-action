@@ -1,0 +1,5 @@
+inputs:
+  ide-server-version:
+    type: string
+  ide-server-port:
+    type: string
