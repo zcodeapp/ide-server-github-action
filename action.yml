@@ -14,9 +14,20 @@ inputs:
     description: 'IDE Server port to use (default "4000")'
     required: false
     default: '4000'
+  ide-server-network:
+    description: 'IDE Server network to use (default "host")'
+    required: false
+    default: 'host'
+  ide-server-container-name:
+    description: 'IDE Server container name to use (default "test_container")'
+    required: false
+    default: 'test_container'
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.mongodb-version }}
+    - ${{ inputs.ide-server-version }}
+    - ${{ inputs.ide-server-port }}
+    - ${{ inputs.ide-server-network }}
+    - ${{ inputs.ide-server-container-name }}

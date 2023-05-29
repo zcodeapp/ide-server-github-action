@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
 
     - name: Start ZCode APP IDE Server
-      uses: zcodeapp/ide-server-github-action@1.0.7
+      uses: zcodeapp/ide-server-github-action@1.1.0
 ```
