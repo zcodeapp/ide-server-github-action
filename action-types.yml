@@ -3,3 +3,9 @@ inputs:
     type: string
   ide-server-port:
     type: string
+  ide-server-network:
+    type: string
+  ide-server-container-name:
+    type: string
+  ide-server-key:
+    type: string
