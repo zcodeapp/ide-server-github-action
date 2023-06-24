@@ -9,3 +9,7 @@ inputs:
     type: string
   ide-server-key:
     type: string
+  ide-rate-points:
+    type: string
+  ide-rate-duration:
+    type: string

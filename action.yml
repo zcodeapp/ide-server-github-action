@@ -23,9 +23,17 @@ inputs:
     required: false
     default: 'test_container'
   ide-server-key:
-    description: 'IDE Server key (default "1234567890")'
+    description: 'IDE Server key (default "355b5636-3c3e-4e57-97ad-5e1dd40283a2")'
     required: false
-    default: '1234567890'
+    default: '355b5636-3c3e-4e57-97ad-5e1dd40283a2'
+  ide-rate-points:
+    description: 'IDE rate points (default "5")'
+    required: false
+    default: "5"
+  ide-rate-duration:
+    description: 'IDE rate duration (default "600")'
+    required: false
+    default: "600"
 
 runs:
   using: 'docker'
@@ -36,3 +44,5 @@ runs:
     - ${{ inputs.ide-server-network }}
     - ${{ inputs.ide-server-container-name }}
     - ${{ inputs.ide-server-key }}
+    - ${{ inputs.ide-rate-points }}
+    - ${{ inputs.ide-rate-duration }}
